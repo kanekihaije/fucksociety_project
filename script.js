@@ -5,7 +5,7 @@ function askForPassword() {
     if (password === "нахрен общество канеки") {
         alert("Доступ предоставлен!");
         // Показываем контент
-        document.getElementById("content").style.display = "block";
+        document.body.style.display = "block"; // Показываем тело страницы
     } else {
         alert("Неверный пароль. Доступ запрещен.");
         // Закрываем страницу или выполняем дополнительные действия
@@ -14,11 +14,7 @@ function askForPassword() {
 }
 
 // Вызываем функцию при загрузке страницы
-window.onload = function() {
-    // Скрываем контент
-    document.getElementById("content").style.display = "none";
-    askForPassword();
-};
+window.onload = askForPassword;
 
 // Функция для генерации случайного цвета
 function getRandomColor() {
