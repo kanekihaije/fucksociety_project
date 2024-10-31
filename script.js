@@ -124,3 +124,20 @@ function showContent(id) {
     
 
 }
+function askForPassword() {
+    const password = prompt("Введите пароль для доступа к сайту:");
+
+    // Проверяем введенный пароль
+    if (password === "нахрен общество канеки") {
+        alert("Доступ предоставлен!");
+        // Показываем контент
+        document.getElementById("content").style.display = "block";
+    } else {
+        alert("Неверный пароль. Доступ запрещен.");
+        // Закрываем страницу или выполняем дополнительные действия
+        window.location.href = "https://example.com"; // Перенаправление на другую страницу
+    }
+}
+
+// Вызываем функцию при загрузке страницы
+window.onload = askForPassword;

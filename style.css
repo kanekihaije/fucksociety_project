@@ -467,3 +467,6 @@ animation: yaeblan 0.5s infinite;
     50%{border: 20px solid gray;}
     100%{border: 20px solid #000;}
 }
+#content {
+    display: none;
+}
