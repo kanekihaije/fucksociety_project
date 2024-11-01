@@ -473,6 +473,7 @@ animation: yaeblan 0.5s infinite;
 }
 p, h1, h2, h3, h4, h5, h6 {
     user-select: none;
+    -webkit-user-select: none;
   }
   
   /* Запрет на перетаскивание изображений */
@@ -482,6 +483,7 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -ms-user-drag: none;
+    -webkit-user-drag: none;
   }
   nav {
     user-select: none;
